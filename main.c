@@ -18,7 +18,7 @@ int b(int leftt, int rightt, int keyy, int kk[], int nn, int midd) {
     if (keyy < kk[mid])
         return b(leftt, mid, keyy, kk, nn, midd);
     else
-        return b(mid, rightt, keyy, kk, nn, midd);
+        return b(mid+1, rightt, keyy, kk, nn, midd);
 
 }
 
